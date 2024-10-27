@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Turísticos del Caribe</title>
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Estilos personalizados */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #005f73;
+        }
+
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+
+        /* Hero section */
+        .hero-section {
+            background-image: url('https://via.placeholder.com/1500x800/87CEEB/FFFFFF?text=Caribbean+Paradise');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+        }
+
+        /* Secciones de Tours */
+        .tours-section {
+            padding: 60px 20px;
+        }
+
+        .tour-card {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .tour-card:hover {
+            transform: scale(1.05);
+        }
+
+        .tour-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .tour-card .card-body {
+            background-color: #e0f7fa;
+        }
+
+        /* About section */
+        .about-section {
+            background-color: #f7f7f7;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            color: #005f73;
+        }
+
+        .about-icon {
+            font-size: 2rem;
+            color: #00796b;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #005f73;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Caribbean Tours</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+                <a href="#book" class="btn btn-warning ml-3">Reservar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <h1>Bienvenido al Paraíso Caribeño</h1>
+        <p>Descubre las mejores experiencias turísticas en el Caribe</p>
+        <a href="#tours" class="btn btn-warning btn-lg mt-3">Explorar Tours</a>
+    </section>
+
+    <!-- Tours Section -->
+    <section id="tours" class="tours-section container">
+        <h2 class="text-center text-primary">Nuestros Tours</h2>
+        <div class="row">
+            <!-- Tour de Playa -->
+            <div class="col-md-4">
+                <div class="card tour-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOVaRXC5aNXsrgo5udaQRTaael2xg5ewMwRjiISlE_paGewyoMTW2t4uw2M0k3il-WjuA&usqp=CAU" class="card-img-top" alt="Tour de Playa">
+                    <div class="card-body">
+                        <h5 class="card-title">Tour de Playa</h5>
+                        <p><i class="fas fa-umbrella-beach"></i> Relájate en las playas de arena blanca y aguas turquesas del Caribe.</p>
+                        <p><strong>Desde $99 USD</strong></p>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Chichen Itza Tour -->
+            <div class="col-md-4">
+                <div class="card tour-card">
+                    <img src="https://www.chichenitza.com/public/assets/img/ruins/chichen-itza-ruins.jpg" class="card-img-top" alt="Chichen Itzá">
+                    <div class="card-body">
+                        <h5 class="card-title">Chichen Itzá</h5>
+                        <p><i class="fas fa-landmark"></i> Explora la maravilla del mundo antiguo con una visita a Chichen Itzá.</p>
+                        <p><strong>Desde $129 USD</strong></p>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tulum Tour -->
+            <div class="col-md-4">
+                <div class="card tour-card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/28/46/54/caption.jpg?w=1200&h=-1&s=1" class="card-img-top" alt="Tulum">
+                    <div class="card-body">
+                        <h5 class="card-title">Tour Tulum</h5>
+                        <p><i class="fas fa-water"></i> Descubre las ruinas de Tulum junto al mar Caribe.</p>
+                        <p><strong>Desde $79 USD</strong></p>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>Misión, Visión y Valores</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="about-icon"><i class="fas fa-globe-americas"></i></div>
+                    <h5>Misión</h5>
+                    <p>Proveer experiencias únicas en el Caribe, ofreciendo calidad y excelencia en cada tour.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="about-icon"><i class="fas fa-eye"></i></div>
+                    <h5>Visión</h5>
+                    <p>Ser la agencia líder en turismo caribeño, reconocida por la satisfacción de nuestros clientes.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="about-icon"><i class="fas fa-heart"></i></div>
+                    <h5>Valores</h5>
+                    <p>Pasión, integridad y compromiso con el medio ambiente y el bienestar de nuestros visitantes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Caribbean Tours | Todos los derechos reservados</p>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
